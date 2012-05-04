@@ -32,7 +32,7 @@ To create custom cells, you can just subclass WCGridViewCell. Currently WCGridVi
 
 ---
 
-## Notes:
+#### Notes:
 - This project uses ARC
 - This is still in early stages
 
