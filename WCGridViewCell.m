@@ -20,8 +20,8 @@
     self = [super initWithFrame:CGRectNull];
     if (self) 
     {
-        _titleLabel                 = [[UILabel alloc] initWithFrame:CGRectZero]
-        _titleLabel.backgroundColor = CLEAR;
+        _titleLabel                 = [[UILabel alloc] initWithFrame:CGRectZero];
+        _titleLabel.backgroundColor = [UIColor clearColor];
         
         [self addSubview:_titleLabel];
     }

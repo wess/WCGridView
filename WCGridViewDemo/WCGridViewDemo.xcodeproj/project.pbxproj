@@ -1,0 +1,317 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		087E11521566DC1500F526A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 087E11511566DC1500F526A3 /* UIKit.framework */; };
+		087E11541566DC1500F526A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 087E11531566DC1500F526A3 /* Foundation.framework */; };
+		087E11561566DC1500F526A3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 087E11551566DC1500F526A3 /* CoreGraphics.framework */; };
+		087E115C1566DC1500F526A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 087E115A1566DC1500F526A3 /* InfoPlist.strings */; };
+		087E115E1566DC1500F526A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 087E115D1566DC1500F526A3 /* main.m */; };
+		087E11621566DC1500F526A3 /* WCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 087E11611566DC1500F526A3 /* WCAppDelegate.m */; };
+		087E11711566DC3600F526A3 /* UIGestureRecognizer+FLKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 087E116A1566DC3600F526A3 /* UIGestureRecognizer+FLKit.m */; };
+		087E11721566DC3600F526A3 /* WCGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 087E116C1566DC3600F526A3 /* WCGridView.m */; };
+		087E11731566DC3600F526A3 /* WCGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 087E116E1566DC3600F526A3 /* WCGridViewCell.m */; };
+		087E11741566DC3600F526A3 /* WCGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 087E11701566DC3600F526A3 /* WCGridViewController.m */; };
+		087E11761566DC6300F526A3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 087E11751566DC6300F526A3 /* QuartzCore.framework */; };
+		087E117A1566DCF600F526A3 /* WCExampleGridController.m in Sources */ = {isa = PBXBuildFile; fileRef = 087E11791566DCF600F526A3 /* WCExampleGridController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		087E114D1566DC1500F526A3 /* WCGridViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WCGridViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		087E11511566DC1500F526A3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		087E11531566DC1500F526A3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		087E11551566DC1500F526A3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		087E11591566DC1500F526A3 /* WCGridViewDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WCGridViewDemo-Info.plist"; sourceTree = "<group>"; };
+		087E115B1566DC1500F526A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		087E115D1566DC1500F526A3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		087E115F1566DC1500F526A3 /* WCGridViewDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WCGridViewDemo-Prefix.pch"; sourceTree = "<group>"; };
+		087E11601566DC1500F526A3 /* WCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCAppDelegate.h; sourceTree = "<group>"; };
+		087E11611566DC1500F526A3 /* WCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCAppDelegate.m; sourceTree = "<group>"; };
+		087E11691566DC3600F526A3 /* UIGestureRecognizer+FLKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIGestureRecognizer+FLKit.h"; path = "../../UIGestureRecognizer+FLKit.h"; sourceTree = "<group>"; };
+		087E116A1566DC3600F526A3 /* UIGestureRecognizer+FLKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIGestureRecognizer+FLKit.m"; path = "../../UIGestureRecognizer+FLKit.m"; sourceTree = "<group>"; };
+		087E116B1566DC3600F526A3 /* WCGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCGridView.h; path = ../../WCGridView.h; sourceTree = "<group>"; };
+		087E116C1566DC3600F526A3 /* WCGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCGridView.m; path = ../../WCGridView.m; sourceTree = "<group>"; };
+		087E116D1566DC3600F526A3 /* WCGridViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCGridViewCell.h; path = ../../WCGridViewCell.h; sourceTree = "<group>"; };
+		087E116E1566DC3600F526A3 /* WCGridViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCGridViewCell.m; path = ../../WCGridViewCell.m; sourceTree = "<group>"; };
+		087E116F1566DC3600F526A3 /* WCGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCGridViewController.h; path = ../../WCGridViewController.h; sourceTree = "<group>"; };
+		087E11701566DC3600F526A3 /* WCGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCGridViewController.m; path = ../../WCGridViewController.m; sourceTree = "<group>"; };
+		087E11751566DC6300F526A3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		087E11781566DCF600F526A3 /* WCExampleGridController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCExampleGridController.h; sourceTree = "<group>"; };
+		087E11791566DCF600F526A3 /* WCExampleGridController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCExampleGridController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		087E114A1566DC1500F526A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				087E11761566DC6300F526A3 /* QuartzCore.framework in Frameworks */,
+				087E11521566DC1500F526A3 /* UIKit.framework in Frameworks */,
+				087E11541566DC1500F526A3 /* Foundation.framework in Frameworks */,
+				087E11561566DC1500F526A3 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		087E11421566DC1500F526A3 = {
+			isa = PBXGroup;
+			children = (
+				087E11571566DC1500F526A3 /* WCGridViewDemo */,
+				087E11501566DC1500F526A3 /* Frameworks */,
+				087E114E1566DC1500F526A3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		087E114E1566DC1500F526A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				087E114D1566DC1500F526A3 /* WCGridViewDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		087E11501566DC1500F526A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				087E11751566DC6300F526A3 /* QuartzCore.framework */,
+				087E11511566DC1500F526A3 /* UIKit.framework */,
+				087E11531566DC1500F526A3 /* Foundation.framework */,
+				087E11551566DC1500F526A3 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		087E11571566DC1500F526A3 /* WCGridViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				087E11771566DCE700F526A3 /* ExampleGridController */,
+				087E11601566DC1500F526A3 /* WCAppDelegate.h */,
+				087E11611566DC1500F526A3 /* WCAppDelegate.m */,
+				087E11681566DC2300F526A3 /* GridView */,
+				087E11581566DC1500F526A3 /* Supporting Files */,
+			);
+			path = WCGridViewDemo;
+			sourceTree = "<group>";
+		};
+		087E11581566DC1500F526A3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				087E11591566DC1500F526A3 /* WCGridViewDemo-Info.plist */,
+				087E115A1566DC1500F526A3 /* InfoPlist.strings */,
+				087E115D1566DC1500F526A3 /* main.m */,
+				087E115F1566DC1500F526A3 /* WCGridViewDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		087E11681566DC2300F526A3 /* GridView */ = {
+			isa = PBXGroup;
+			children = (
+				087E11691566DC3600F526A3 /* UIGestureRecognizer+FLKit.h */,
+				087E116A1566DC3600F526A3 /* UIGestureRecognizer+FLKit.m */,
+				087E116B1566DC3600F526A3 /* WCGridView.h */,
+				087E116C1566DC3600F526A3 /* WCGridView.m */,
+				087E116D1566DC3600F526A3 /* WCGridViewCell.h */,
+				087E116E1566DC3600F526A3 /* WCGridViewCell.m */,
+				087E116F1566DC3600F526A3 /* WCGridViewController.h */,
+				087E11701566DC3600F526A3 /* WCGridViewController.m */,
+			);
+			name = GridView;
+			sourceTree = "<group>";
+		};
+		087E11771566DCE700F526A3 /* ExampleGridController */ = {
+			isa = PBXGroup;
+			children = (
+				087E11781566DCF600F526A3 /* WCExampleGridController.h */,
+				087E11791566DCF600F526A3 /* WCExampleGridController.m */,
+			);
+			name = ExampleGridController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		087E114C1566DC1500F526A3 /* WCGridViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 087E11651566DC1500F526A3 /* Build configuration list for PBXNativeTarget "WCGridViewDemo" */;
+			buildPhases = (
+				087E11491566DC1500F526A3 /* Sources */,
+				087E114A1566DC1500F526A3 /* Frameworks */,
+				087E114B1566DC1500F526A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WCGridViewDemo;
+			productName = WCGridViewDemo;
+			productReference = 087E114D1566DC1500F526A3 /* WCGridViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		087E11441566DC1500F526A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WC;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "American Business Journals";
+			};
+			buildConfigurationList = 087E11471566DC1500F526A3 /* Build configuration list for PBXProject "WCGridViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 087E11421566DC1500F526A3;
+			productRefGroup = 087E114E1566DC1500F526A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				087E114C1566DC1500F526A3 /* WCGridViewDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		087E114B1566DC1500F526A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				087E115C1566DC1500F526A3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		087E11491566DC1500F526A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				087E115E1566DC1500F526A3 /* main.m in Sources */,
+				087E11621566DC1500F526A3 /* WCAppDelegate.m in Sources */,
+				087E11711566DC3600F526A3 /* UIGestureRecognizer+FLKit.m in Sources */,
+				087E11721566DC3600F526A3 /* WCGridView.m in Sources */,
+				087E11731566DC3600F526A3 /* WCGridViewCell.m in Sources */,
+				087E11741566DC3600F526A3 /* WCGridViewController.m in Sources */,
+				087E117A1566DCF600F526A3 /* WCExampleGridController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		087E115A1566DC1500F526A3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				087E115B1566DC1500F526A3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		087E11631566DC1500F526A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		087E11641566DC1500F526A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		087E11661566DC1500F526A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WCGridViewDemo/WCGridViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "WCGridViewDemo/WCGridViewDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		087E11671566DC1500F526A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WCGridViewDemo/WCGridViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "WCGridViewDemo/WCGridViewDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		087E11471566DC1500F526A3 /* Build configuration list for PBXProject "WCGridViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				087E11631566DC1500F526A3 /* Debug */,
+				087E11641566DC1500F526A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		087E11651566DC1500F526A3 /* Build configuration list for PBXNativeTarget "WCGridViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				087E11661566DC1500F526A3 /* Debug */,
+				087E11671566DC1500F526A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 087E11441566DC1500F526A3 /* Project object */;
+}

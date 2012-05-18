@@ -75,6 +75,13 @@ static const CGFloat kGridViewDefaultRowHeight = 50.0f;
 {
     [super layoutSubviews];
     
+    static NSString *RowIdentifier = @"__WCGridViewRowIdentifier__";
+    
+    // Hack fix for rotation
+    for(UIView *view in _scrollView.subviews)
+        [view removeFromSuperview];
+
+    
     _scrollView.frame = self.bounds;
 
     _numberOfRows = [self.dataSource numberOfRowsForGridView:self];
@@ -89,19 +96,33 @@ static const CGFloat kGridViewDefaultRowHeight = 50.0f;
         if([self.dataSource respondsToSelector:@selector(gridView:heightForRowAtIndex:)])
             rowHeight = [self.dataSource gridView:self heightForRowAtIndex:row];
             
-        UIView *rowView = [[UIView alloc] initWithFrame:CGRectMake(self.origin.x, currentY, self.width, rowHeight)];
+        CGRect currentRowFrame = CGRectMake(self.frame.origin.x, currentY, self.frame.size.width, rowHeight);
+        UIView *rowView = (UIView  *)[self dequeueReusableCellWithIdentifier:RowIdentifier];
+        
+        if(rowView == nil)
+            rowView = [[UIView alloc] initWithFrame:currentRowFrame];
+        else
+            rowView.frame = currentRowFrame;
         
         NSInteger cols      = [self.dataSource gridView:self numberOfColumnsForRowAtIndex:row];
-        CGFloat cellWidth   = (self.width / cols);
+        CGFloat cellWidth   = (self.frame.size.width / cols);
         
         for(int column = 0; column < cols; column++)
         {
             WCGridIndexPath indexPath;
             indexPath.row       = row;
             indexPath.column    = column;
+            indexPath.index     = (row * 2) + column;
             
             WCGridViewCell *cell = [self.dataSource gridView:self cellForGridIndexPath:indexPath];
             cell.frame           = CGRectMake((cellWidth * column), 0.0f, cellWidth, rowHeight);
+            cell.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin  | 
+                                    UIViewAutoresizingFlexibleTopMargin     |
+                                    UIViewAutoresizingFlexibleHeight        | 
+                                    UIViewAutoresizingFlexibleLeftMargin    | 
+                                    UIViewAutoresizingFlexibleRightMargin   | 
+                                    UIViewAutoresizingFlexibleWidth;
+            
             [rowView addSubview:cell];
             
             if(cell.reuseIdentifier)
@@ -119,8 +140,10 @@ static const CGFloat kGridViewDefaultRowHeight = 50.0f;
             }
         }
         
-        rowView.top     = (rowHeight * row);
-        contentHeight  += rowView.height;
+        CGRect rowFrame         = rowView.frame;
+        rowFrame.origin.y       = (rowHeight * row);
+        rowView.frame           = rowFrame;
+        contentHeight          += rowView.frame.size.height;
         
         CGSize contentSize = _scrollView.contentSize;
         contentSize.height = contentHeight;

@@ -13,6 +13,7 @@
 typedef struct {
     NSInteger row;
     NSInteger column;
+    NSInteger index;
 } WCGridIndexPath;
 
 @protocol WCGridViewDataSource;
