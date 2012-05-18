@@ -90,7 +90,7 @@ static const CGFloat kGridViewDefaultRowHeight = 50.0f;
     int contentHeight   = 0;
 
     CGFloat rowHeight = kGridViewDefaultRowHeight;
-    
+    int colCount = 0;
     for(int row = 0; row < _numberOfRows; row++)
     {
         if([self.dataSource respondsToSelector:@selector(gridView:heightForRowAtIndex:)])
@@ -112,7 +112,7 @@ static const CGFloat kGridViewDefaultRowHeight = 50.0f;
             WCGridIndexPath indexPath;
             indexPath.row       = row;
             indexPath.column    = column;
-            indexPath.index     = (row * 2) + column;
+            indexPath.index     = colCount++;
             
             WCGridViewCell *cell = [self.dataSource gridView:self cellForGridIndexPath:indexPath];
             cell.frame           = CGRectMake((cellWidth * column), 0.0f, cellWidth, rowHeight);
