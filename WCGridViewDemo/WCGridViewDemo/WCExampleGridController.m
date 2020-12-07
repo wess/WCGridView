@@ -52,7 +52,7 @@ UIColor *randomColor()
     if(cell == nil)
         cell = [[WCGridViewCell alloc] initWithReuseIdentifier:CellIdentifier];
     
-    cell.titleLabel.text = [NSString stringWithFormat:@"Row: %d / Col: %d / Index: %d", indexPath.row, indexPath.column, indexPath.index];
+    cell.titleLabel.text = [NSString stringWithFormat:@"Row: %ld / Col: %ld / Index: %ld", (long)indexPath.row, (long)indexPath.column, (long)indexPath.index];
     cell.backgroundColor = randomColor();
     
     return cell;
@@ -66,11 +66,11 @@ UIColor *randomColor()
 #pragma mark - GridView Delegate Methods
 - (void)gridView:(WCGridView *)gridView didSelectCellAtIndexPath:(WCGridIndexPath)indexPath
 {
-    NSLog(@"Tapped Row: %d / Col: %d / Index: %d", indexPath.row, indexPath.column, indexPath.index);
+    NSLog(@"Tapped Row: %ld / Col: %ld / Index: %ld", (long)indexPath.row, (long)indexPath.column, (long)indexPath.index);
 }
 
 #pragma mark - Orientation
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
+- (BOOL)shouldAutorotate
 {
     return YES;
 }
